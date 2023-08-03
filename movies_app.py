@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1dx-PfCmv9vlTTueBv6NGyZWihusRc9N-
 """
 
-import pickle
+from pickle5 import pickle
 import pandas as pd
 import streamlit as st
 from streamlit import session_state as session
