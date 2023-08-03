@@ -27,13 +27,13 @@ def recommend_table(list_of_movie_enjoyed,tfidf_data, movie_count=20):
   return sorted_similarity_df
 
 def load_data():
-  tfidf_data = pd.read_csv("tfidf_small_df.csv", index_col=0)
+  tfidf_data = pd.read_csv("tfidf_mall_df.csv", index_col=0)
   return tfidf_data
 
 
 tfidf = load_data()
 
-with open("movie_list_small.pickle", "rb") as f:
+with open("movies_list_small.pickle", "rb") as f:
   movies = pickle.load(f)
   dataframe = None
 
